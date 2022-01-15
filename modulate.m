@@ -1,3 +1,4 @@
+%function to do the qpsk modulation
 function [tx_signal,Xi,Xq] = modulate(t,fc,data)
 no_of_bits = size(data,2);
 Xi = cos(2*pi*fc*t);
